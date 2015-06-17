@@ -1,5 +1,6 @@
 <div class="new-animal-form">
     {{input type="text" placeholder="Your pets name" value=name class="name-input"}}
-    {{input type="text" placeholder="Describe your pet" value=description class="name-input"}}
+    {{input type="text" placeholder="Describe your pet" value=description class="description-input"}}
+    {{input type="date" placeholder="When did he/she go missing?" value=date class="date-input"}}
     <button {{action 'addAnimal'}} class="submit">Add pet</button>
 </div>
