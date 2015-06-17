@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'homewardboud',
     environment: environment,
+    firebase: 'https://homeward-bound.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

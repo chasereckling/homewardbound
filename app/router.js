@@ -6,5 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.resource('animals');
+  this.resource('animals', function() {
+    this.route('new');
+  });
 });
