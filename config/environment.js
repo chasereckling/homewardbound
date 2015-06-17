@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'homewardboud',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
     firebase: 'https://homeward-bound.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
@@ -27,6 +28,7 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline'",
       'frame-src': "'none'"
     }
+
   };
 
   if (environment === 'development') {
