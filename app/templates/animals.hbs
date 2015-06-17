@@ -5,5 +5,5 @@
 <br>
 
 {{#each animal in model}}
-  <div class="each-msg">{{animal.name}}: {{animal.description}} (Missing Since: {{animal.date}})</div>
+  <div class="each-msg">{{#link-to 'animal' animal.id}} {{animal.name}}: {{animal.description}} (Missing Since: {{animal.date}}){{/link-to}}</div>
 {{/each}}
