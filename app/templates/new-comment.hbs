@@ -1,6 +1,6 @@
 <div class="new-comment-form">
-  {{input type="text" placeholder="Your name" value=name class="name-input"}}
-  {{input type="text" placeholder="Comment" value=comment class="comment-input"}}
-  {{input type="date" placeholder="Date" value=date class="date-input"}}
+  <p>{{input type="text" placeholder="Your name" value=name class="name-input"}}</p>
+  <p>{{textarea rows="4" type="text" placeholder="Comment" value=comment class="comment-input"}}</p>
+  <p>{{input type="date" placeholder="Date" value=date class="date-input"}}</p>
   <button {{action 'addComment'}} class="submit">Add comment</button>
 </div>

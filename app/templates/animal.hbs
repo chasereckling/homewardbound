@@ -23,7 +23,9 @@
 
     {{#each comment in model.comments}}
       <ul>
-        {{comment.name}}
+        <li>{{comment.name}}</li>
+        {{comment.comment}}
+        {{comment.date}}
       </ul>
     {{/each}}
   </div>
