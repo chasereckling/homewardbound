@@ -6,6 +6,6 @@ export default DS.Model.extend({
   name: attr('string'),
   date: attr('string'),
   description: attr('string'),
-  latitude: attr('string'),
-  longitude: attr('string')
+  lat: attr('string'),
+  long: attr('string')
 });
