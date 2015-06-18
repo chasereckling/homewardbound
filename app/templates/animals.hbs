@@ -5,6 +5,10 @@
 
 
 <br>
-{{#each animal in model}}
-  <div class="each-msg">{{#link-to 'animal' animal.id}} {{animal.name}}: {{animal.description}} (Missing Since: {{animal.date}}){{/link-to}}</div>
-{{/each}}
+<div id="wrapper">
+  <div id="columns">
+  {{#each animal in model}}
+    <div class="each-msg">{{#link-to 'animal' animal.id}} <img src="{{animal.image}}">{{/link-to}}<p>{{animal.name}}: {{animal.description}} (Missing Since: {{animal.date}})</p></div>
+  {{/each}}
+</div>
+</div>
