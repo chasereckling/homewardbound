@@ -5,8 +5,6 @@ var attr = DS.attr;
 export default DS.Model.extend({
   name: attr('string'),
   date: attr('string'),
-  description: attr('string'),
-  address: attr('string'),
-  image: attr('string'),
-  comments: DS.hasMany('comment', {async: true})
+  comment: attr('string'),
+  animal: DS.belongsTo('animal', {async: true})
 });

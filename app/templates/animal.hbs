@@ -14,6 +14,17 @@
 
     {{google-map address=model.address}}
 
-    <div id="googleMap" style="width:500px;height:380px;"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="container">
+    <li>{{#link-to 'new-comment'}}Add a comment{{/link-to}}</li>
+    {{outlet}}
+
+    {{#each comment in model.comments}}
+      <ul>
+        {{comment.name}}
+      </ul>
+    {{/each}}
   </div>
 </div>
