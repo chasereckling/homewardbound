@@ -7,17 +7,21 @@ export default Ember.Controller.extend({
         name: this.get('name'),
         date: this.get('date'),
         description: this.get('description'),
-        lat: this.get('lat'),
-        long: this.get('long')
+        address: this.get('address')
       });
       newAnimal.save();
       this.setProperties({
         name: '',
         date: '',
         description: '',
-        lat: '',
-        long: ''
+        address: ''
       });
+
+
+
+
+
+
       this.transitionToRoute('animals');
     }
   }

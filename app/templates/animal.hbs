@@ -6,6 +6,8 @@
 </div>
 <br>
 
-{{google-map lat=model.lat long=model.long}}
+<h2>Address: {{model.address}}</h2>
+
+{{google-map address=model.address}}
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
