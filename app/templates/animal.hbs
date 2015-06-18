@@ -1,13 +1,19 @@
-<h1>animal page lol</h1>
+<h1>{{model.name}}</h1>
+<h3>Missing since: {{model.date}}</h3>
 
-<div>
-{{model.name}}
-{{model.description}}
+<div class="row">
+  <div class="col-md-6">
+    <img src="{{model.image}}">
+    <h4>Description: {{model.description}}</h4>
+
+  </div>
+  <br>
+
+  <div class="col-md-6">
+    <h2>Address: {{model.address}}</h2>
+
+    {{google-map address=model.address}}
+
+    <div id="googleMap" style="width:500px;height:380px;"></div>
+  </div>
 </div>
-<br>
-
-<h2>Address: {{model.address}}</h2>
-
-{{google-map address=model.address}}
-
-<div id="googleMap" style="width:500px;height:380px;"></div>

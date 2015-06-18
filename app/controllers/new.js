@@ -7,14 +7,16 @@ export default Ember.Controller.extend({
         name: this.get('name'),
         date: this.get('date'),
         description: this.get('description'),
-        address: this.get('address')
+        address: this.get('address'),
+        image: this.get('image')
       });
       newAnimal.save();
       this.setProperties({
         name: '',
         date: '',
         description: '',
-        address: ''
+        address: '',
+        image: ''
       });
 
 
